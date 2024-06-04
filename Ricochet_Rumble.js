@@ -525,63 +525,8 @@ function destroyBoard(){
     })
 }
 
-//add shootCannonBullets before ReverseId
-bulletMovement={axis:'column',parity:'down'}
-// function shootCanonBullets(){
+bulletMovement='column'
 
-//     return new Promise((resolve)=>{
-//         canonElement=document.querySelector(playerGo==="white"?"div#canon svg.white":"div#canon svg.beige")
-//         presentSquare=canonElement.parentNode
-//         presentSquareId=presentSquare.getAttribute("square-id")
-
-//         row=0
-//         col=Number(presentSquareId)
-//         //initiating the first target square
-//         deltaRow=1
-//         deltaCol=0
-//         targetRow=row+deltaRow
-//         targetCol=col+deltaCol
-//         targetSquareId=targetRow*width+targetCol
-//         targetSquare=document.querySelector(`"[square-id=${targetSquareId}]"`)
-//         count=0
-        
-//         setInterval(()=>{
-//             if (count==0){
-//                 bulletDiv=document.createElement("div")
-//                 bulletDiv.classList.add("bullet")
-//                 bulletDiv.innerHTML=bullet
-//                 bulletDiv.firstChild.firstChild.classList.add(playerGo)
-//                 targetSquare.append(bullet)
-
-//                 if (targetSquare.childElementCount<2){
-//                     deltaRow=1
-//                     deltaCol=0
-//                 }
-//                 else{
-//                     piece=targetSquare.querySelector(".pieces")
-//                     pieceId=piece.id
-//                     if(pieceId=="titan"){
-                        
-//                     }
-//                 }
-//             }
-//             else{
-
-
-
-//                 targetSquare = document.querySelector("")
-//                 bulletDiv=document.createElement("div")
-//                 bulletDiv.classList.add("bullet")
-//                 bulletDiv.innerHTML=bullet
-//                 targetSquare.append(bullet)
-//             }
-
-            
-//         },500)
-
-//     })
-    
-// }
 
 function endGame(player){
     if (player=='white'){
